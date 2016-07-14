@@ -1,0 +1,8 @@
+def reverseList(listName,newList = None):
+if newList == None:
+    newList = []
+if len(listName)>0:
+    newList.append((listName.pop()))
+    return reverseList(listName, newList)
+else:
+    return newList
